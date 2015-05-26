@@ -32,7 +32,8 @@
 
     </div>
     
-   	<div class="clear"></div>
+   	
+   		
     	<?php 
         wp_nav_menu( array( 
     		'fallback_cb'     => 'sigmatheme_page_menu',
@@ -42,6 +43,7 @@
     		'container_class' => 'thmfdn-menu-container'
     	)); 
     	?>
-    </div>
+  
+</div>
     
 </div> <!--  End blog header -->

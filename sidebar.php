@@ -4,7 +4,7 @@
  * @subpackage sigma
  */
 ?>
-    <div class="one-third column omega" id="side">
+    <div class="one-third column omega hide-on-mobile" id="side">
     
         <div class="sidebar"> <!--  the Sidebar -->
             <?php 

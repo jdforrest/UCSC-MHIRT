@@ -280,7 +280,16 @@ hr {
 
 @media only screen and (min-width: 768px) {
   #side.one-third.column {
-    /* margin-left: 30px; */ } }
+    /* margin-left: 30px; */ }
+  .hide-on-tablet-desktop{
+  	display: none;
+  }
+  #menu-item-61,
+  #menu-item-62,
+  #menu-item-63{
+  	display: none;
+  }   
+}
 /* #Tablet (Portrait) Grid
 ================================================== */
 /* Note: Design for a width of 768px */
@@ -407,7 +416,16 @@ hr {
 
   /* WordPress sidebar*/
   .one-third.column {
-    /* margin-left: 30px; */ } }
+    /* margin-left: 30px; */ }
+  .hide-on-tablet-desktop{
+  	display: none;
+  }
+  #menu-item-61,
+  #menu-item-62,
+  #menu-item-63{
+  	display: none;
+  }   
+}
 /*  #Mobile (Portrait) Grid
 ================================================== */
 /* Note: Design for a width of 320px */
@@ -578,7 +596,6 @@ p a, p a:visited {
 @media only screen and (max-width: 767px) {
   .hide-on-mobile {
     display: none; }
-
   .logo a {
     width: 100%; }
 
@@ -709,7 +726,8 @@ p a, p a:visited {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   .hide-on-mobile {
-    display: none; } }
+    display: none; }   
+}
 ul, ol {
   margin-bottom: 20px; }
 
@@ -1466,7 +1484,8 @@ by Jonathan Snook at http://smacss.com
 	letter-spacing: .02em;
 }
 .thmfdn-menu li a{
-	padding: .5em 7em;
+	width: 100%;
+	padding: .5em 0em;
 }
 .thmfdn-menu a:hover,
 .thmfdn-menu .current-menu-item a {
@@ -1493,6 +1512,17 @@ by Jonathan Snook at http://smacss.com
 
 .is-mobile-menu.menu-arrows .is-open-submenu > a .toggle-submenu {
   background: rgba(255, 255, 255, 0.1); }
+
+@media only screen and (max-width: 767px) {
+	.thmfdn-menu li{
+		border: none !important;
+	}
+	.thmfdn-menu li a{
+		width: 100%;
+		margin: 0;
+		padding: .5em 0;
+	}
+}
 
 /* Contact Form Widget */
 #contact-name,
